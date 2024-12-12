@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Advanced Concepts</title>
+</head>
+<body>
+
+    <!-- 9. All Elements of Form -->
+    <h2>Form Elements</h2>
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading"> Reading
+        <input type="checkbox" id="hobby2" name="hobbies" value="sports"> Sports
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- 10. Attribute -->
+    <h2>Attributes Example</h2>
+    <p title="Hover over me to see the title">This paragraph has a `title` attribute. Hover over it to see the tooltip.</p>
+    <a href="https://www.google.com" target="_blank" title="Go to Google">Visit Google</a>
+
+    
+    <!-- 13. Events -->
+    <h2>HTML Events Example</h2>
+    <button onclick="alert('Button clicked!')">Click Me</button>
+    <br><br>
+    <input type="text" id="textInput" oninput="updateText()" placeholder="Type something here">
+    <p id="output"></p>
+    
+   
+
+</body>
+</html>
